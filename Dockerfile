@@ -2,6 +2,10 @@ FROM python:3
 
 WORKDIR /data
 
+# Install pip tools
+RUN python -m ensurepip && pip install --upgrade pip setuptools wheel
+
+
 RUN pip install django==3.2
 
 COPY . .
