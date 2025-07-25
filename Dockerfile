@@ -1,8 +1,8 @@
-FROM python:3
+FROM python:3.10-slim
 
 WORKDIR /data
 
-# Install pip tools
+
 RUN python -m ensurepip && pip install --upgrade pip setuptools wheel
 
 
